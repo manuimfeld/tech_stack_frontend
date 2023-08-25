@@ -1,8 +1,23 @@
-# React + Vite
+Proyecto TECH_STACK (frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Desarrollo de una aplicación fullstack para gestionar lenguajes de programación y sus pilas tecnológicas.
 
-Currently, two official plugins are available:
+Descripción:
+Este proyecto tiene como objetivo crear una aplicación fullstack que permita a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en una lista de lenguajes de programación. Además, proporcionará información detallada sobre las pilas tecnológicas más populares utilizadas en el desarrollo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Características:
+- CRUD completo para lenguajes de programación.
+- Información detallada sobre pilas tecnológicas.
+- Diseño responsive y amigable para el usuario.
+
+Tecnologías Utilizadas:
+Frontend: [React, Tailwind]
+Backend: ////
+Base de Datos: MySQL
+
+Contribuciones:
+¡Contribuciones y sugerencias son bienvenidas!.
+
+Enlaces:
+- Demo en Vivo: https://tech_stack.manuimfeld.com.ar
+- Repositorio Backend: https://github.com/manuimfeld/tech_stack_backend
