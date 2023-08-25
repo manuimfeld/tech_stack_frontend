@@ -1,6 +1,5 @@
 import {} from "react";
 import "./App.css";
-import Nav from "./components/Nav";
 import Home from "./views/Home";
 import Languages from "./views/Languages";
 import Stack from "./views/Stack";
@@ -15,7 +14,6 @@ function App() {
         <Routes>
           <Route path="" Component={Home} />
           <Route path="home" Component={Home} />
-          <Route path="nav" Component={Nav} />
           <Route path="languages" Component={Languages} />
           <Route path="stack" Component={Stack} />
           <Route path="about" Component={About} />
