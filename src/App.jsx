@@ -7,10 +7,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Technology from "./views/Technology";
-import NewTechnologyForm from "./views/NewTechnologyForm";
+import NewTechnologyForm from "./views/CreatePost";
 import Register from "./views/Register";
 import Login from "./views/Login";
-import EditTechnologyForm from "./views/EditTechnologyForm";
+import EditTechnologyForm from "./views/EditPost";
 import MyPosts from "./views/MyPosts";
 
 function App() {
