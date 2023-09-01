@@ -25,3 +25,12 @@ export const validationTechnology = Yup.object().shape({
     )
     .max(200, "La URL de la imagen no debe tener más de 200 caracteres"),
 });
+
+export const loginSchema = Yup.object().shape({
+  email: Yup.string()
+    .required("El correo electrónico es obligatorio")
+    .email("Debe ser un correo electrónico válido"),
+  password: Yup.string()
+    .required("La contraseña es obligatoria")
+    .min(8, "La contraseña debe tener al menos 8 caracteres"),
+});
