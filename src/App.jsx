@@ -10,6 +10,8 @@ import Technology from "./views/Technology";
 import NewTechnologyForm from "./views/NewTechnologyForm";
 import Register from "./views/Register";
 import Login from "./views/Login";
+import EditTechnologyForm from "./views/EditTechnologyForm";
+import MyPosts from "./views/MyPosts";
 
 function App() {
   return (
@@ -20,8 +22,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/technologys" element={<Technologys />} />
-          <Route path="/technologys/:name" element={<Technology />} />
+          <Route path="/technology/:name" element={<Technology />} />
           <Route path="/post-technology" element={<NewTechnologyForm />} />
+          <Route path="/my-posts" element={<MyPosts />} />
+          <Route path="/my-posts/edit/:id" element={<EditTechnologyForm />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={NotFound} />
