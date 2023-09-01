@@ -31,32 +31,34 @@ const Technology = () => {
         </div>
       </div>
       <hr />
-      <div className="w-full flex flex-wrap justify-around py-6 text-center">
-        <h2 className="block w-full mb-4">USO</h2>
-        {props.additional_info.usage_examples.map((example) => {
-          return (
-            <span
-              key={props.id}
-              className="rounded-full bg-secondary text-bgblack w-fit px-4 py-2 text-xs inline-block"
-            >
-              {example}
-            </span>
-          );
-        })}
-        <h2 className="block w-full my-4">
-          Aplicaciones que usan {props.technology}
-        </h2>
-        {props.additional_info.applications.map((example) => {
-          return (
-            <span
-              key={props.example}
-              className="rounded-full bg-secondary text-bgblack w-fit px-4 py-2 text-xs inline-block"
-            >
-              {example}
-            </span>
-          );
-        })}
-      </div>
+      {props.additional_info !== null && (
+        <div className="w-full flex flex-wrap justify-around py-6 text-center">
+          <h2 className="block w-full mb-4">USO</h2>
+          {props.additional_info.usage_examples.map((example) => {
+            return (
+              <span
+                key={props.id}
+                className="rounded-full bg-secondary text-bgblack w-fit px-4 py-2 text-xs inline-block"
+              >
+                {example}
+              </span>
+            );
+          })}
+          <h2 className="block w-full my-4">
+            Aplicaciones que usan {props.technology}
+          </h2>
+          {props.additional_info.applications.map((example) => {
+            return (
+              <span
+                key={props.example}
+                className="rounded-full bg-secondary text-bgblack w-fit px-4 py-2 text-xs inline-block"
+              >
+                {example}
+              </span>
+            );
+          })}
+        </div>
+      )}
     </section>
   );
 };
