@@ -1,14 +1,10 @@
 import { Field, ErrorMessage, useFormikContext } from "formik";
+import { getBorderStyle } from "../../helpers/formHelpers";
 
 const FormSelect = ({ name, label }) => {
   const { errors, touched, values } = useFormikContext();
 
-  const hasError = errors[name] && touched[name];
-  const borderColorClass = hasError
-    ? "border-red-500"
-    : values[name]
-    ? "border-green-500"
-    : "border-gray-700";
+  const borderColorClass = getBorderStyle(name, errors, touched, values);
   return (
     <div className="p-2 w-1/2">
       <div className="relative">

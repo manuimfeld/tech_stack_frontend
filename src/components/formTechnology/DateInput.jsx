@@ -2,17 +2,13 @@ import { Field, ErrorMessage, useFormikContext } from "formik";
 import DatePicker, { registerLocale } from "react-datepicker";
 import es from "date-fns/locale/es";
 import "react-datepicker/dist/react-datepicker.css";
+import { getBorderStyle } from "../../helpers/formHelpers";
 registerLocale("es", es);
 
 const DateInput = ({ name, label }) => {
   const { errors, touched, values } = useFormikContext();
 
-  const hasError = errors[name] && touched[name];
-  const borderColorClass = hasError
-    ? "border-red-500"
-    : values[name]
-    ? "border-green-500"
-    : "border-gray-700";
+  const borderColorClass = getBorderStyle(name, errors, touched, values);
 
   return (
     <div className="p-2 w-1/2">
